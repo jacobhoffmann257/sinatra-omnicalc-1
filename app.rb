@@ -10,10 +10,22 @@ get("/squarenumber") do
   erb(:squarenumber)
 end
 get("/square_root/new") do
+
   erb(:square_root)
+end
+get("/findroot") do
+  number = params.fetch("square")
+  @squared = Math.sqrt(number.to_f)
+  erb(:findroot)
 end
 get("/payment/new") do
   erb(:payment)
+end
+get("/calc") do
+  rate = params.fetch("apr")
+  @ratefloat = Math.sqrt(rate.to_f)
+  valuein = params.fetch("")
+  erb(:calc)
 end
 get("/random/new") do
   erb(:random)
