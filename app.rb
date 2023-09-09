@@ -1,15 +1,18 @@
 require "sinatra"
 require "sinatra/reloader"
 
-get("/sqaure/new") do
+get("/square/new") do
 erb(:hello)
 end
-get("/sqaure_root/new") do
+get("/square_root/new") do
   erb(:hello)
 end
 get("/payment/new") do
   erb(:hello)
-  end
+end
+get("/random/new") do
+  erb(:hello)
+end
 get("/") do
   "
   <h1>Welcome to your Sinatra App!</h1>
