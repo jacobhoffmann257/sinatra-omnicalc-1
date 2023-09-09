@@ -21,10 +21,8 @@ end
 get("/payment/new") do
   erb(:payment)
 end
-get("/calc") do
-  rate = params.fetch("apr")
-  @ratefloat = Math.sqrt(rate.to_f)
-  valuein = params.fetch("")
+get("/payment/results") do
+  
   erb(:calc)
 end
 get("/random/new") do
