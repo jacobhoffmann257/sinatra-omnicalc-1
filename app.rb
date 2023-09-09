@@ -4,6 +4,11 @@ require "sinatra/reloader"
 get("/square/new") do
 erb(:square)
 end
+get("/squarenumber") do
+  number = params.fetch("square")
+  @squared = number.to_f * number.to_f
+  erb(:squarenumber)
+end
 get("/square_root/new") do
   erb(:square_root)
 end
