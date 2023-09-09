@@ -2,16 +2,16 @@ require "sinatra"
 require "sinatra/reloader"
 
 get("/square/new") do
-erb(:hello)
+erb(:square)
 end
 get("/square_root/new") do
-  erb(:hello)
+  erb(:square_root)
 end
 get("/payment/new") do
-  erb(:hello)
+  erb(:payment)
 end
 get("/random/new") do
-  erb(:hello)
+  erb(:random)
 end
 get("/") do
   "
