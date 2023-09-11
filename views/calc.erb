@@ -1,3 +1,14 @@
-<p>APR</p>
-<p>Number of years</p>
-<p>Principal</p>
+
+<dl>
+<dt>Apr</dt>
+<dd><%= @aprstring.to_s %></dd>
+<dt>Number</dt>
+<dd><%= @years%></dd>
+<dt>Principal</dt>
+<dd><%= @pv%></dd>
+<dt>Payment</dt>
+<dd><%=  @paymentstring %></dd>
+
+</dl>
+
+<a href = "/payment/new"> Calculate another payment</a>
